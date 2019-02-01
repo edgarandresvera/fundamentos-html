@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>etiquetas SVG y sus atributos</title>
+  </head>
+  <body>
+    <h2>dentro ed un espacio de trabajo svg, existen otras etiquetas que nos permiten epspecificar informacion complementarias
+    <br>
+  para mejorar o facilitar el manejo de los elementos que los conponen, tambien contamos con otras etiquetas que nos sirven , para optimizar nuestro trabajo
+<br>
+entre los elementos adiocionales podemos encontrar, etiquetas de agrupaminetos, descripciones o definiciones que luego pueden ser reutilizados.
+<br>
+tambien encontraremos algunas etiquetas para configirar el diseño degradados lineales y radiales, uso de textos y complementarias
+<br>
+vamos a ver como funcionan cada uno de esotos elementos
+</h2>
+<br>
+<strong>la primera etiqueta que usaremos se llama"G" G es un elemento contenedor para agregar elementos graficos dentro de si mismo,
+<br>
+la ventaja de esta etiqueta es que podemos usarla para definir estilos y formas que automaticamente eredaran todods lo elementos contenidos.
+<br>
+en el resultado puede verse que los estilos aplicados al elemtno G tambien afectaron a los dos cuadrados. </strong>
+<br>
+<svg width="1200px" height="1200px" viebox=" 0 1200 1200">
+  <g id="agrupacion1" fill="green" stroke="black" stroke-width="5">
+    <rect x="150px" y="100px" width="80px" height="80px"
+    <rect x="350px" y="150px" width="150px" height="150px"
+
+  </g>
+ </svg>
+ <h2>otra etiqueta importante es "defs" con ella podremos definir partes de codigos que luego podremos reutilizar en otras partes de trabajo
+ <br>
+vamos a relalizar un ejemplo definiendo un efecto de relleno degradado, que utilizaremos en otros elementos, si ejecutamos este codigo en el navegador, no lograremos ver nada
+<br>
+ya que esto se refiere a una simple definicion de algo que utilizaremos en otro elemnto.
+<br>
+vamos a utilizar este relleno degradado en un rectangul, veamos en codigo fuento y el resultado en el navegador.
+
+</h2>
+
+<svg width="1200px" height="1200px" vieBox="0 0 1200 1200">
+  <defs>
+    <linearGradient id="Gradiente1">
+      <stop offset="20%" stop-color="#39f" />
+      <stop offset="90%" stop-color="#f3f" />
+    </linearGradient>
+    </defs>
+    <rect x="100" y="100" width="250px" height="400px"
+    fill="url(#gradiente1)" />
+
+</svg>
+
+
+  </body>
+</html>

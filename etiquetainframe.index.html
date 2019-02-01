@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>etiqueta iFrame</title>
+  </head>
+  en esta ocacion vamos a aprender a inscruptar paginas externas.dentro de una pagina propia, en el marco se vera la pagina que queramos metere.
+<br>
+para lograrlo, insertamos la etiqueta <b> iFrame src ="https://www.ejemplo.com </b> con los valores ancho y alto utilizamos <b> width="400px" height="400px </b>
+<br>
+adicionalmente antes de cerrar la etiqueta iFrame colocamos el atributo <b> "name" </b> que sirve para definir un nombre que sirve por si la pagina no puede ser cargada.
+<br>
+hay que verificar que la pagina no tenga un <b>POP-UP</b> que son paginas que se abren en el navegador y ofrecen interacciones con el cliente
+para evitar esto, agregamos el atributo <b>SANDBOX</b>
+<br>
+<br>
+<br>
+
+
+
+el atributo sandbox tiene los siguientes valores posibles:<br>
+
+<li>
+      <b>sandbox="allow-forms"</b> premite que los formularios al interior de el iFrame envien datos si el cliente llena la informacion
+    <br>que le soliciten, en caso de no indicar este atributos el cliente puede llenar los datos del formulario, pero cuando
+    <br>queira enviar los datos, no enviara nada
+    <br
+    </li>
+    <br>
+<li>
+    <b>sandbox="PopUps"</b> permite que se ejecuten ventanas emergentes, si el sitio que ejecutamos en el iFrame las contenga, de esta manera <br>
+    si el sitio que vemos en el iFrame tiene ventanas emergentes el navegador las ejecuta sin inconvenientes, si no indicamos este atributo, <br>
+     y la pagina alojada en el iFrame tiene ventnas Pop-ups , el navegador las bloqueara y las ejecutara
+</li>
+<br>
+<li>
+    <b>sandbox="alow-scripts"</b> este valor peromite que el navegador ejecute codigos Javascript del lado del clinete, y la posibilidad de acceder a la <br>
+        webcam , nuestros archivos y demas dispositivos que tengamos conectados a la computadora. en caso de no indicar el atriburo, el sitio alojado no <br>
+        ejecuta los codigos de este tipo
+        </li>
+        <br>
+        <li>
+          <b>sandbox="allow-top-navigation"</b> se usa para permitir que el sitio alojado en el iFrame, atraves de uno de sus enlaces pueda remplazar nuestro <br>
+           contenido por otro propuesto por el mismo <br>
+        es decir contenido dieferente al nuestro. si omitimos esta linea evitamos este inconveniente.
+</li>
+<br>
+  <li>
+          <b>finalmente el atributo "src"</b> muestra la ruta de lo que deseamos mostrar. junto con este atributo tenenmos el "srcdoc" que permite agregar directamente al iFrame codigo html.
+</li>
+<br>
+<br>
+<li>
+  una de las formas mas comunes de usar un iFrame es cuando queremos insertar algun contnido de pagina como youtube, googlemaps, entre otras. por ejemplo si queremos <br>
+   insertart un iFrame  para google maps, debemos buscar en google "iFrame para agregr google maps." y  a apartir de esta busqueda
+  <br>
+  nos salen las instrucciones para agregar el iFrame.
+  <br>
+  <h3>el resultado de la busqueda da el siguiente resultado:
+    <br>
+    Cómo incorporar un video
+En una computadora, busca el video de YouTube que quieres incorporar.
+<br>
+Haz clic en COMPARTIR Compartir debajo del video.
+<br>
+Haz clic en Incorporar.
+<br>
+Copia el código HTML que aparece en el cuadro.
+<br>
+Pega el código en el HTML de tu blog o sitio web.
+</li>
+<br>
+<br>
+<br>
+Cómo incorporar una lista de reproducción
+<li>
+  <ul>
+<br>
+Accede a tu cuenta de YouTube desde una computadora.
+<br>
+</ul>
+<ul>
+  En el lado izquierdo de la página, selecciona la lista de reproducción que quieres incorporar.
+<br>
+</ul>
+<ul>
+Copia el ID de la lista de reproducción desde la URL.
+<br>
+</ul>
+<ul>
+Para modificar el código de incorporación de un video individual, haz lo siguiente:
+</ul>
+<br>
+<ul>
+En lugar del ID de video (que aparece después de “embed/”), escribe “videoseries?list=”.
+<br>
+</ul>
+<ul>
+Luego, pega el ID de la lista de reproducción después del signo “=”.
+<br>
+</ul>
+<ul>
+Pega el código en el HTML de tu blog o sitio web.
+<br>
+</ul>
+</h3>
+Ejemplo:
+<br>
+</li>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<br>
+<br>
+<br>
+
+  <b>debemos saber que la etiqueta, puede conter el atributo <b>"allow-full screen"</b> que en el caso de que el contenido lo permita, es la opcion de pantalla completa.</b>
+
+
+
+
+
+
+  <body>
+    <br>
+    <br>
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4tJzpveFsPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>imagenes SVG</title>
+  </head>
+
+  <body>
+<h1>etiqueta svg</h1>
+<h3>para crear un grafico svg,tenemos dos opciones, la primera es referenciar a traves de un vinculo la imagen ".svg" generada por algun software externo
+   <br>
+  como por ejemplo incascape o ilustratorbr
+  y la segunda es crear nuestro propio espacio de trabajo y graficar utilizando las herramientas que nos da el navegador y el lenguaje html5.
+  <br>
+en caso  de incluir un archivo .svg construido previamente lo podemos hacer, por meido de una etiqueta "image" la cual se define dentro de la etiqueta svg.
+<br>
+<b>image es diferente a la etiqueta  img</b> es propia de svg, y tiene un atributo que reemplaza al tradicional "src" que es <b>xlink:href </b>
+<br>
+el cual recibe como valor la ruta y nombre del archivo.
+adicionalmente tambien cuenta como atributos para posisionar la imagen en los puntos "X y Y" <b> <svg style="border: 4px solid black;">
+</b>
+  <br>
+para incluir un archivo svg externo no, es necesario hacerlo dentro de la etiqueta svg.brtambien puedes hacerlo con la etiqueta tradicional"IMG"
+ <br>
+si queremos definir nuetro propio espaico de trabajo para empezar a crear graficos,debemos indicar un atributo llamado <b>viewBox</b> dentro de la
+<br>
+etiqueta svg, este atributo sirve para crear un sub-espacio de trabajo,
+<br>
+dentro del cual se generan los elementos de la misma etiqueta, esto quiere decir que con svg, definimos el ancho y el alto, de un tablero principal, y dentro de ese tablero tenemos otro que puede ocupar solo una parte <br>
+ o todo el espacio que corresponde al "viewBox"
+ <br>
+ "viewBox" recibe 4 valores numericos separados por espacios o comas,<b> el primero y el segundo valor corresponden al punto donde se situa el segundo tablero,en los respectivos ejes "X y X" el tercero y cuarto valor, <br>
+   corresponden al ancho y alto</b>
+   en este ejemplo el "viewBox" o espacio de trabajo ocupa todo el espacio del ttrablero.
+   ejemplos para cada forma de trabajo svg.
+  <br>
+  agreramos una imagen svg.
+  <br>
+
+  <svg width="2200px" height="2400px" viewBox ="3 6 1200 400">
+    <image width="400px" height"400px" xlink:href="C:\Users\andres-joha\Downloads\Next u\images/whatsapp-logo.svg">whatsapp</image>
+  </svg>
+</h3>
+
+
+<svg style="border: 2px solid black">
+<image xlink:href="C:\Users\andres-joha\Downloads\Next u\images\imagenes.svg\Social Media Icons\SVG\Circle Black White/Google+.svg">google+</image>
+  <image xlink:href=
+    </svg>
+
+
+
+  </body>
+</html>
